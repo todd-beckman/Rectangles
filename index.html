@@ -1,0 +1,16 @@
+<!--DOCTYPE html-->
+<html>
+    <body>
+        <canvas id="c" width="1600" height="900" style="background-color: #000000;"></canvas>
+        <br>
+        <input type="button" value="fast" onclick="Time.interval = 1000 / 60">
+        <input type="button" value="med" onclick="Time.interval = 1000 / 30">
+        <input type="button" value="slow" onclick="Time.interval = 1000 / 15">
+        FPS: <span id="fps">0</span><br>
+        <input type="button" value="more" onclick="addParticle(15)">
+        <input type="button" value="less" onclick="removeParticle(15)">
+        Particles: <span id="num">0</span>
+        <br>
+    </body>
+    <script src="script.js"></script>
+</html>
