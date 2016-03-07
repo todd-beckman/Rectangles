@@ -12,4 +12,4 @@ Currently there is an odd spiking behavior where the target framerate is
 perfectly maintained for a few seconds, and then well-timed lag spikes ruin
 everything since the delta in the update function does not seem to recognize
 these spikes. I suspect though that the spikes are caused by the system, not
-the code. Currently the framerate 
+the code. Currently the framerate it can handle is 60fps with 5600 rectangles.

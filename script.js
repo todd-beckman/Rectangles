@@ -1,4 +1,5 @@
 var twopi = Math.PI * 2;
+var speed = 0.5;
 
 var c = document.getElementById("c");
 var ctx = c.getContext("2d");
@@ -73,8 +74,8 @@ function addParticle(num) {
         var c = colors[Math.floor(Math.random() * numcolors)];
         var t = Math.random() * twopi;
         var v = {
-            x : Math.sin(t) * 0.1,
-            y : Math.cos(t) * 0.1
+            x : Math.sin(t) * speed,
+            y : Math.cos(t) * speed
         };
         var rect = new Rectangle(x, y, 10, 10, c);
         particles.push(new Particle(rect, v, {x:0, y:0}));
